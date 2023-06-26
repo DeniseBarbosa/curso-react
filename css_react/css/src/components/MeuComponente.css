@@ -1,0 +1,11 @@
+p{
+  color: rgb(184, 136, 230);
+  background-color: rgb(8, 8, 8);
+}
+.meu-paragrafo-customizad{
+  background-color: rgb(107, 12, 110);
+  color: antiquewhite;
+  padding: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
