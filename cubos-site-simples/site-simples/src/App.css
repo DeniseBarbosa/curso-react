@@ -1,0 +1,95 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+header, footer{
+  background-color: black;
+  color: rgb(161, 159, 7);
+}
+header{
+  height: 52px;
+  /* um ao lado do outro  */
+  display: flex;
+  /* logo em uma ponta e menus na outra ponta  */
+  justify-content: space-between;
+  align-items: center;
+}
+header h2{
+  /* 0 cima e baixo > 10 direita e esquerda */
+  margin: 0 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  
+}
+ .menu{
+  /* menus vai ficar em linha (um ao lado do outro )  */
+  display: flex;
+  gap: 10px;
+  /* remove as bolinhas do menu  */
+  list-style: none;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+header h2:hover{
+  color: white;
+}
+ .menu li:hover{
+  color: white;
+  cursor: pointer;
+}
+section{
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  height: calc(100vh - 148px);
+}
+
+section img {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(161, 159, 7);
+  border-radius: 50%;
+  padding: 3px;
+  
+}
+section .esquerdo{
+  width: 300px;
+  /* height: 100%;   */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  border-right: 1px solid rgb(161, 159, 7);
+  /* vai afastar a linha vertical direita para a direita  */
+  padding-right: 20px;
+}
+section .esquerdo strong{
+  margin: 8px;
+}
+section .esquerdo span{
+  text-align: start; 
+}
+section .direito{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; 
+  border-bottom: 1px solid rgb(161, 159, 7);
+  width: 50%;
+  height: 200px;
+}
+section .direito a {
+  margin-top: 20px;
+  text-decoration: none;
+
+}
+footer{
+  height: 96px;
+  /* para o align-items e o justify-content funcionar, tenho que colocar o display: flex:  */
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  text-transform: uppercase;
+}
